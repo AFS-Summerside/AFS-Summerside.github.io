@@ -2,19 +2,18 @@ name: Create pull request to github pages
 run-name: ${{ github.actor }} - ${{ github.ref_name }}
 on:
    pull_request:
-      branches:
-         - published
       paths:
-      - 'markdown/**.md'
+      - '*.md'
    push:
       paths:
-      - '/**.md'
+      - '*.md'
    workflow_dispatch:
 jobs:
     markdown-spelling:
       runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+      - uses: actions/checkout@v4
         with:
          ref: ${{ github.head_Ref }}
       - name: Spell Check
@@ -22,9 +21,10 @@ jobs:
     markdown-link-check:
       runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+      - uses: actions/checkout@v4
         with:
-         ref: ${{ github.head_Ref }}
+            ref: ${{ github.head_Ref }}
       - name: Check links
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
