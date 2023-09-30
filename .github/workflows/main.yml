@@ -5,13 +5,10 @@ on:
       branches:
          - published
       paths:
-         - '/**.md'
-   push:
-      paths:
-      - '/**.md'
-   workflow_dispatch:
+      - 'markdown/**.md'
+
 jobs:
-    spelling:
+    markdown-spelling:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
@@ -19,3 +16,12 @@ jobs:
          ref: ${{ github.head_Ref }}
       - name: Spell Check
         uses: UnicornGlobal/spellcheck-github-actions@master
+    markdown-link-check:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@master
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+         use-verbose-mode: 'yes'
+         folder-path: '/'
+         file-extension: '.md'
