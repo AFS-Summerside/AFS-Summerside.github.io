@@ -56,7 +56,7 @@ The executive reviewed the agenda. **Moved by Justin, Seconded by Carl**. The ag
 
 ### Assign Roles of the executive
 
-As there were more positions open than people present at the meeting, all position were acclaimed and decided on by the executive memebers present at the meeting. Roles were assigned as follows:
+As there were more positions open than people present at the meeting, all position were acclaimed and decided on by the executive members present at the meeting. Roles were assigned as follows:
 
 | **Role**       | **Name**    |
 |----------------|-------------|
@@ -67,19 +67,19 @@ The executive decided that for the interim, we would prefer to work with the sec
 
 ### Choose a date for ratification session
 
-Justin explained that at the last Subgroup Presidents meeting, Chris Roach mentioned ratification sessions will be happening in the next month. The dates that work best for Chris were October 16th and October 17th. Carl and Logan both mention that because the 16th is a monday, more people are likely to have a compressed day off, and that would likely have an affect on attendence. The executive decided to start making the plans to have the ratification session on October 17th.
+Justin explained that at the last Subgroup Presidents meeting, Chris Roach mentioned ratification sessions will be happening in the next month. The dates that work best for Chris were October 16th and October 17th. Carl and Logan both mention that because the 16th is a Monday, more people are likely to have a compressed day off, and that would likely have an affect on attendance. The executive decided to start making the plans to have the ratification session on October 17th.
 
 It was noted that we still have a big issue in terms of communication. There is no list of emails we can use in this instance to contact all of the members about this ratification sessions. It was notes that currently the AFS Summerside email address has no contact list, and Justin mentioned that the Membership list he got from PIPSC only contained CRA email addresses, which cannot be used in this case.
 
 ### Discord as a communication tool
 
-Justin set up a discord server for the subgroup. At the moment, it has been used by just the executive, with plans of opening it up to the entire membership. Carl made valid points that not everyone uses discord, and we would still need other ways to contact our members in a way that is familiar to them. Justin explain that using Discord, we can automate the same important messaging to be sent on any channel we want, like facebook, twitter, thread, email, or any other electronic medium.
+Justin set up a discord server for the subgroup. At the moment, it has been used by just the executive, with plans of opening it up to the entire membership. Carl made valid points that not everyone uses discord, and we would still need other ways to contact our members in a way that is familiar to them. Justin explain that using Discord, we can automate the same important messaging to be sent on any channel we want, like Facebook, Twitter, email, or any other electronic medium.
 
-The executive dicussed different social platforms it could use to get information out to members. It was decided that the executive would start with the following platforms:
+The executive discussed different social platforms it could use to get information out to members. It was decided that the executive would start with the following platforms:
 
 - Facebook
 - Twitter
-- Thread
+- Threads
 
 The executive decided to run a beta test of the Discord server with stewards before opening up the server to the membership. This will allow the executive time to ensure it is functioning as intended, and allow the stewards to use the server and get used it before members are potentially in there and attempting to interact with them.
 
@@ -93,7 +93,7 @@ Justin reiterated the complexities of trying to reach out to members when we hav
 
 The executive discussed the viability of using the PIPSC official communication channels, and Carl added that communication sent out using this method can take multiple weeks before it gets into the inbox of our members.
 
-All agree to start reaching out to people they know on personal communication channel and ask them to email the afs-summerside email address with their name so they can be added to an email list.
+All agree to start reaching out to people they know on personal communication channel and ask them to email the AFS Summerside email address with their name so they can be added to an email list.
 
 ### Consultation
 
