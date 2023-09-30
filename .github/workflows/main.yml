@@ -6,7 +6,10 @@ on:
          - published
       paths:
       - 'markdown/**.md'
-
+   push:
+      paths:
+      - '/**.md'
+   workflow_dispatch:
 jobs:
     markdown-spelling:
       runs-on: ubuntu-latest
