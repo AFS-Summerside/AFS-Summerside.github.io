@@ -9,7 +9,7 @@ on:
 
 jobs:
     spelling:
-      runs-on: unbuntu-latest
+      runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
         with:
