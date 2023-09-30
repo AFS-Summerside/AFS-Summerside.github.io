@@ -22,9 +22,10 @@ jobs:
     markdown-link-check:
       runs-on: ubuntu-latest
       steps:
+      - name: Check links
       - uses: actions/checkout@master
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
-      with:
-         use-verbose-mode: 'yes'
-         folder-path: '/'
-         file-extension: '.md'
+        with:
+            use-verbose-mode: 'yes'
+            folder-path: '/'
+            file-extension: '.md'
