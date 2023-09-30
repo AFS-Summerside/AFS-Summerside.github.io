@@ -22,10 +22,10 @@ jobs:
     markdown-link-check:
       runs-on: ubuntu-latest
       steps:
-      - name: Check links
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
         with:
          ref: ${{ github.head_Ref }}
+      - name: Check links
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
             use-verbose-mode: 'yes'
