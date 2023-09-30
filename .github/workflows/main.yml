@@ -12,22 +12,22 @@ jobs:
     markdown-spelling:
       runs-on: ubuntu-latest
       steps:
-      - name: Checkout
-      - uses: actions/checkout@v4
-        with:
-         ref: ${{ github.head_Ref }}
-      - name: Spell Check
-        uses: UnicornGlobal/spellcheck-github-actions@master
+         - name: Checkout
+         - uses: actions/checkout@v4
+           with:
+            ref: ${{ github.head_Ref }}
+         - name: Spell Check
+           uses: UnicornGlobal/spellcheck-github-actions@master
     markdown-link-check:
       runs-on: ubuntu-latest
       steps:
-      - name: Checkout
-      - uses: actions/checkout@v4
-        with:
-            ref: ${{ github.head_Ref }}
-      - name: Check links
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
+         - name: Checkout
+         - uses: actions/checkout@v4
+              with:
+               ref: ${{ github.head_Ref }}
+         - name: Check links
+         - uses: gaurav-nelson/github-action-markdown-link-check@v1
+           with:
             use-verbose-mode: 'yes'
             folder-path: '/'
             file-extension: '.md'
