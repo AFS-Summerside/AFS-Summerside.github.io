@@ -21,13 +21,10 @@ jobs:
     markdown-link-check:
       runs-on: ubuntu-latest
       steps:
-         - name: Checkout
-           uses: actions/checkout@v4
-           with:
-               ref: ${{ github.head_Ref }}
-         - name: Check links
-           uses: gaurav-nelson/github-action-markdown-link-check@v1
-           with:
-            use-verbose-mode: 'yes'
-            folder-path: '/'
-            file-extension: '.md'
+      - name: Converts Markdown to HTML
+        uses: jaywcjlove/markdown-to-html-cli@main
+        with:
+         source: README-zh.md
+         output: coverage/action.html
+         github-corners: https://github.com/jaywcjlove/markdown-to-html-cli
+         favicon: data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>
