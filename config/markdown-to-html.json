@@ -1,0 +1,13 @@
+{
+  "markdown-to-html": {
+    "document": {
+      "title": "markdown-to-html-cli",
+      "author": "AFS Summerside Subgroup Executive",
+      "style": "/config/markdown-to-html.json",
+    "github-corners": "",
+    "reurls": {
+      "README-zh.md": "index.zh.html",
+      "README.md": "index.html"
+    }
+  }
+}
