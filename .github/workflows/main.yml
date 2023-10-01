@@ -3,10 +3,10 @@ run-name: ${{ github.actor }} - ${{ github.ref_name }}
 on:
    pull_request:
       paths:
-      - '*.md'
+      - '/markdown/*.md'
    push:
       paths:
-      - '*.md'
+      - '/markdown/*.md'
    workflow_dispatch:
 jobs:
     markdown-spelling:
