@@ -53,6 +53,8 @@ function subTheForm() {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
+			"Access-Control-Allow-Origin": "https://afs-summerside.github.io",
+
 		},
 		body: JSON.stringify(dataToSend),
 	})
