@@ -819,7 +819,7 @@ button,
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column; }
-      #signup-form input[type="type"],
+      #signup-form input[type="text"],
       #signup-form input[type="password"],
       #signup-form input[type="email"] {
         width: 100%; }
