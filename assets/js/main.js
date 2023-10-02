@@ -49,7 +49,7 @@ function subTheForm() {
 		"Email": document.getElementById("email").value
 	}
 	
-	fetch('https://sfka8hckge.execute-api.us-east-1.amazonaws.com/default/emailAppender', {
+	fetch('https://ugsddpi130.execute-api.us-east-1.amazonaws.com/Production/emailProxy', {
 		method: 'POST',
         "headers": {
 			'Content-Type': "application/json"
