@@ -21,6 +21,7 @@ function validateForm(inForm) {
 	}
 	if (emailIsValid && noEmptyField && formHasContent) {
 		subTheForm();
+		document.getElementById("signup-form").submit();
 	}
 }
 
@@ -59,5 +60,5 @@ function subTheForm() {
 		.then(data => console.log(data))
 		.catch(error => console.log('Error:', error));
 
-		
+		alert(response + data + error);
 }
