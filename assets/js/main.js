@@ -10,7 +10,7 @@ function validateForm(inForm) {
 			noEmptyField = false;
 		} else {
 			if (field.name == "email") {
-				emailValidation = validateEmail(field);
+				emailIsValid = validateEmail(field);
 			} else {
 				field.setCustomValidity('');
 			}
@@ -30,16 +30,16 @@ function validateEmail(fieldE) {
 	var domainBlocker = /.*@cra*/
 	var emailIsValid = false
 	fieldE.setCustomValidity("");
-	if (pattern.test(fieldE.value)) {
+	if (!pattern.test(fieldE.value)) {
 		fieldE.setCustomValidity("Invalid Email Address");
 	} else {
 		if (domainBlocker.test(fieldE.value)) {
 			fieldE.setCustomValidity("Do not use a CRA email address");
 		} else {
-			emailIsValid = true;
+			return true
 		}
 	}
-	return emailIsValid;
+	return false;
 }
 
 function subTheForm() {
