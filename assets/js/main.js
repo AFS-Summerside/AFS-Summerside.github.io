@@ -1,31 +1,28 @@
 function validateForm(inForm) {
-	var emptyField = false;
-	var emailValidation = false;
-	var formIsEmpty = true;
+	var noEmptyField = true;
+	var emailIsValid = false;
+	var formHasContent = false;
 	var formFields = document.getElementById("signup-form").getElementsByClassName("inData");
 
 	for (const field of formFields) {
 		if (field.value.trim() == "") {
 			field.setCustomValidity("Cannot be empty");
-			emptyField = true;
+			noEmptyField = false;
 		} else {
 			if (field.name == "email") {
 				emailValidation = validateEmail(field);
 			} else {
 				field.setCustomValidity('');
 			}
-			formIsEmpty = false;
+			formHasContent = true;
 		}
 
 
 	}
-	if (emailValidation && emptyField && !formIsEmpty) {
-		inForm.submit();
-		console.log("Submitted")
-	} else {
-
+	if (emailIsValid && noEmptyField && formHasContent) {
+		alert(document.getElementById("fname"));
+		sub2();
 	}
-
 }
 
 function validateEmail(fieldE) {
@@ -42,6 +39,28 @@ function validateEmail(fieldE) {
 			return true;
 		}
 	}
-
 	return false;
+}
+
+function subTheForm() {
+
+
+	const dataToSend = {
+		"First_Name": document.getElementById("fname").value,
+		"Last_Name": document.getElementById("lname").value,
+		"Email": document.getElementById("email").value
+	}
+
+	fetch('https://dn3ngcdqdznsdiirr6j44yeptm0ugpsa.lambda-url.us-east-1.on.aws/', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(dataToSend),
+	})
+		.then(response => alert(response.text()))
+		.then(data => alert(data))
+		.catch(error => alert('Error:', error));
+
+		
 }
