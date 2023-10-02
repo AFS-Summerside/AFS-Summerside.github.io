@@ -60,6 +60,4 @@ function subTheForm() {
 		.then(response => alert(response.text()))
 		.then(data => alert(data))
 		.catch(error => alert('Error:', error));
-
-		
 }
