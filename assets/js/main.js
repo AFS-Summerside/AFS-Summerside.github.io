@@ -42,8 +42,6 @@ function validateEmail(fieldE) {
 }
 
 function subTheForm() {
-
-
 	const dataToSend = {
 		"First_Name": document.getElementById("fname").value,
 		"Last_Name": document.getElementById("lname").value,
@@ -57,7 +55,9 @@ function subTheForm() {
         },
 		body: JSON.stringify(dataToSend),
 	})
-		.then(response => alert(response.text()))
-		.then(data => alert(data))
-		.catch(error => alert('Error:', error));
+		.then(response => console.log(response.text()))
+		.then(data => console.log(data))
+		.catch(error => console.log('Error:', error));
+
+		
 }
