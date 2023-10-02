@@ -28,7 +28,7 @@ function validateForm(inForm) {
 function validateEmail(fieldE) {
 	var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 	var domainBlocker = /.*@cra*/
-
+	var emailIsValid = false
 	fieldE.setCustomValidity("");
 	if (!pattern.test(fieldE.value)) {
 		fieldE.setCustomValidity("Invalid Email Address");
@@ -39,7 +39,7 @@ function validateEmail(fieldE) {
 			return true;
 		}
 	}
-	return false;
+	return emailIsValid;
 }
 
 function subTheForm() {
