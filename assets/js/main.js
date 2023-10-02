@@ -56,9 +56,18 @@ function subTheForm() {
         },
 		body: JSON.stringify(dataToSend),
 	})
-		.then(response => console.log(response.text()))
-		.then(data => console.log(data))
-		.catch(error => console.log('Error:', error));
+		.then(response => {
+			console.log(response.text())
+			alert(response.text())
+		})
+		.then(data => {
+			console.log(data)
+			alert(data)
+		})
+		.catch(error => {
+			console.log('Error:', error)
+			alert(error)
+		});
 
 		alert(response + data + error);
 }
