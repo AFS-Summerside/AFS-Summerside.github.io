@@ -30,13 +30,13 @@ function validateEmail(fieldE) {
 	var domainBlocker = /.*@cra*/
 	var emailIsValid = false
 	fieldE.setCustomValidity("");
-	if (!pattern.test(fieldE.value)) {
+	if (pattern.test(fieldE.value)) {
 		fieldE.setCustomValidity("Invalid Email Address");
 	} else {
 		if (domainBlocker.test(fieldE.value)) {
 			fieldE.setCustomValidity("Do not use a CRA email address");
 		} else {
-			return true;
+			emailIsValid = true;
 		}
 	}
 	return emailIsValid;
