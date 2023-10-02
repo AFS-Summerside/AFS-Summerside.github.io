@@ -20,8 +20,7 @@ function validateForm(inForm) {
 
 	}
 	if (emailIsValid && noEmptyField && formHasContent) {
-		alert(document.getElementById("fname"));
-		sub2();
+		subTheForm();
 	}
 }
 
@@ -50,12 +49,12 @@ function subTheForm() {
 		"Last_Name": document.getElementById("lname").value,
 		"Email": document.getElementById("email").value
 	}
-
-	fetch('https://dn3ngcdqdznsdiirr6j44yeptm0ugpsa.lambda-url.us-east-1.on.aws/', {
+	
+	fetch('https://sfka8hckge.execute-api.us-east-1.amazonaws.com/default/emailAppender', {
 		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
+        "headers": {
+			'Content-Type': "application/json"
+        },
 		body: JSON.stringify(dataToSend),
 	})
 		.then(response => alert(response.text()))
