@@ -49,13 +49,15 @@ function subTheForm() {
 		"Email": document.getElementById("email").value
 	}
 	console.log(dataToSend);
-	var jsonString = "{ \"body\": {\"First_Name\": \"" + document.getElementById("fname").value + "\", \"Last_Name\": \"" +document.getElementById("lname").value + "\", \"Email\": \"" + document.getElementById("email").value + "\"}}"
+	var dataToSendString = JSON.stringify(dataToSend)
+	console.log("Data being sent: " + dataToSend)
+
 	fetch('https://ugsddpi130.execute-api.us-east-1.amazonaws.com/Production/emailProxy', {
 		method: 'POST',
         "headers": {
 			'Content-Type': "application/json"
         },
-		body: jsonString,
+		body: dataToSend,
 	})
 		.then(response => {
 			console.log(response.text())
