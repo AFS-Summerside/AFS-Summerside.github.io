@@ -52,7 +52,7 @@ function subTheForm() {
 	var dataToSendString = "{\"body\": {" + JSON.stringify(dataToSend) + "}"
 	console.log("Data being sent: " + dataToSend)
 
-	fetch('https://ugsddpi130.execute-api.us-east-1.amazonaws.com/Production/emailProxy', {
+	fetch('https://dn3ngcdqdznsdiirr6j44yeptm0ugpsa.lambda-url.us-east-1.on.aws/default', {
 		method: 'POST',
         "headers": {
 			'Content-Type': "application/json"
