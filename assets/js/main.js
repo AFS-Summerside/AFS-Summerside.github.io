@@ -57,7 +57,7 @@ function subTheForm() {
         "headers": {
 			'Content-Type': "application/json"
         },
-		body: dataToSend,
+		body: dataToSendString,
 	})
 		.then(response => {
 			console.log(response.text())
