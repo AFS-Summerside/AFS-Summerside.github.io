@@ -49,7 +49,7 @@ function subTheForm() {
 		"Email": document.getElementById("email").value
 	}
 	console.log(dataToSend);
-	var dataToSendString = JSON.stringify(dataToSend)
+	var dataToSendString = "{\"body\": {" + JSON.stringify(dataToSend) + "}"
 	console.log("Data being sent: " + dataToSend)
 
 	fetch('https://ugsddpi130.execute-api.us-east-1.amazonaws.com/Production/emailProxy', {
