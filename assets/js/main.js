@@ -61,14 +61,11 @@ function subTheForm() {
 	})
 		.then(response => {
 			console.log(response.text())
-			alert(response.text())
 		})
 		.then(data => {
 			console.log(data)
-			alert(data)
 		})
 		.catch(error => {
 			console.log('Error:', error)
-			alert(error)
 		});
 }
