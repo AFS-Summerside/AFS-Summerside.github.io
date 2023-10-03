@@ -49,7 +49,7 @@ function subTheForm() {
 		"Email": document.getElementById("email").value
 	}
 	console.log(dataToSend);
-	var dataToSendString = "{\"body\": {" + JSON.stringify(dataToSend) + "}"
+	var dataToSendString =  JSON.stringify(dataToSend) 
 	console.log("Data being sent: " + dataToSend)
 
 	fetch('https://dn3ngcdqdznsdiirr6j44yeptm0ugpsa.lambda-url.us-east-1.on.aws/default', {
