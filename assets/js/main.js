@@ -49,7 +49,7 @@ function subTheForm() {
 		"Email": document.getElementById("email").value
 	}
 	console.log(dataToSend);
-	var jsonString = "{\"First_Name\": \"" + document.getElementById("fname").value + "\", \"Last_Name\": \"" +document.getElementById("lname").value + "\", \"Email\": \"" + document.getElementById("email").value + "\"}"
+	var jsonString = "{ \"body\": {\"First_Name\": \"" + document.getElementById("fname").value + "\", \"Last_Name\": \"" +document.getElementById("lname").value + "\", \"Email\": \"" + document.getElementById("email").value + "\"}}"
 	fetch('https://ugsddpi130.execute-api.us-east-1.amazonaws.com/Production/emailProxy', {
 		method: 'POST',
         "headers": {
