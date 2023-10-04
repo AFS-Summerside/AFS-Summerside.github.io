@@ -21,7 +21,7 @@ function validateForm(inForm) {
 	}
 	if (emailIsValid && noEmptyField && formHasContent) {
 		subTheForm();
-		document.getElementById("signup-form").submit();
+		//document.getElementById("signup-form").submit();
 	}
 }
 
